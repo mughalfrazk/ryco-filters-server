@@ -1,20 +1,38 @@
 const express = require('express');
 const path = require('path');
+const pdf = require('html-pdf');
 const { db } = require('./config/db');
 
+const html = `<b>hello world</b>`;
 const app = express();
 
 app.use(express.static(path.join('client/build')));
 
+// Find by ID api
 app.get('/api/:id', async (req, res, next) => {
   db.query(
     `SELECT * from ryco WHERE id = '${req.params.id}';`,
     (err, rows, fields) => {
-      res.status(200).json(rows);
+      if (err) {
+        console.log(err);
+        throw err;
+      }
+      // const options = {
+      //   format: 'Letter',
+      // };
+
+      // pdf.create(html, options).toFile('./pdfname.pdf', (err, res) => {
+      //   if (err) {
+      //     console.log(err);
+      //   }
+      // });
+
+      res.status(200).json({ rows, path: path.resolve('./pdfname.pdf') });
     }
   );
 });
 
+// Serving HTML
 app.use((req, res, next) => {
   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
