@@ -1,0 +1,16 @@
+@use '../../styles/partials' as *;
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mobile_img {
+    width: 20rem;
+  }
+
+  .next_btn {
+    position: absolute;
+    bottom: 5rem;
+  }
+}

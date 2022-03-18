@@ -1,0 +1,17 @@
+main {
+  background-color: #ebeef1;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .main_logo {
+    width: 150px;
+  }
+
+  section {
+    padding: 0 4rem;
+    position: relative;
+  }
+}

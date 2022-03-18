@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c32fd93.css",
+    "main.js": "/static/js/main.1943f612.js",
+    "static/media/ryco-logo.png": "/static/media/ryco-logo.59cf1450982eda916640.png",
+    "static/media/barcode-scanner.jpg": "/static/media/barcode-scanner.53964dc9bddfaf6111a6.jpg",
+    "index.html": "/index.html",
+    "main.2c32fd93.css.map": "/static/css/main.2c32fd93.css.map",
+    "main.1943f612.js.map": "/static/js/main.1943f612.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c32fd93.css",
+    "static/js/main.1943f612.js"
+  ]
+}

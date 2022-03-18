@@ -1,0 +1,17 @@
+@use '../../styles/partials' as *;
+
+.scan_barcode {
+  height: 75vh;
+  background-color: $primaryColor;
+  text-align: center;
+  margin: 0 5rem;
+  padding: 5rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .scan_input {
+    width: 70%;
+    margin: 1rem auto 0;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../../styles/partials' as *;
+
+.welcome {
+  height: 75vh;
+  background-color: $primaryColor;
+  text-align: center;
+  margin: 0 5rem;
+  padding: 5rem 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

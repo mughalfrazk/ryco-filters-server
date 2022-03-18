@@ -1,0 +1,62 @@
+@use '../../styles/partials' as *;
+
+.heading {
+  text-transform: uppercase;
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 800;
+
+  &.secondary {
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &.xs {
+    font-size: 1rem;
+  }
+
+  &.sm {
+    font-size: 1.5rem;
+  }
+
+  &.md {
+    font-size: 2rem;
+  }
+
+  &.lg {
+    font-size: 3rem;
+  }
+
+  &.xl {
+    font-size: 4rem;
+  }
+
+  &.black {
+    span {
+      color: $white;
+    }
+  }
+
+  &.red {
+    color: $primaryColor;
+    span {
+      color: $black;
+    }
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.default {
+    text-transform: none;
+  }
+
+  &.lowercase {
+    text-transform: lowercase;
+  }
+
+  &.capitalize {
+    text-transform: capitalize;
+  }
+}
