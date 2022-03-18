@@ -27,7 +27,7 @@ app.get('/api/:id', async (req, res, next) => {
       //   }
       // });
 
-      res.status(200).json({ rows, path: path.resolve('./pdfname.pdf') });
+      res.status(200).json({ user: rows[0] });
     }
   );
 });

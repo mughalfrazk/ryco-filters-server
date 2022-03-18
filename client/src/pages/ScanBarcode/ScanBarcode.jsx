@@ -23,8 +23,8 @@ const ScanBarcode = () => {
   const onSubmit = async (id) => {
     setIsLoading(true);
     try {
-      const res = await axios.get(`/api/${id}`);
-      user.setData(res?.data[0]);
+      const { data } = await axios.get(`/api/${id}`);
+      user.setData(data?.user);
       setTimeout(() => {
         setIsLoading(false);
         navigate('/welcome');

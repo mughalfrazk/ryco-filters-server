@@ -31,6 +31,7 @@ const Input = ({
           checked={checked}
           value={value}
           onChange={onChange}
+          size="large"
         />
       }
       label={label}

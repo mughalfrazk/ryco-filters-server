@@ -70,12 +70,18 @@ const Staging = () => {
         have <span>won?</span>
       </Heading>
       <div>
-        <button onClick={printDocument}>Hello</button>
-        <Button element="block" variant="contained" color="white" px={7}>
+        {/* <button onClick={printDocument}>Hello</button> */}
+        <Button
+          to="/win"
+          element="block"
+          variant="contained"
+          color="white"
+          px={7}
+        >
           <Heading size="sm">Next</Heading>
         </Button>
       </div>
-      <div
+      {/* <div
         id="slipToPrint"
         style={{
           backgroundColor: '#ffffff',
@@ -101,7 +107,7 @@ const Staging = () => {
         <h2 style={{ marginTop: '10px' }}>
           to redeem your gift. Valid for redemption on data shown below only
         </h2>
-      </div>
+      </div> */}
     </div>
   );
 };

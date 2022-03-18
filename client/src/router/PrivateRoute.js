@@ -6,7 +6,7 @@ import { UserContext } from '../context/user-context';
 const PrivateRoute = ({ children }) => {
   const user = useContext(UserContext);
 
-  if (!user?.data) return <Navigate to="/" />;
+  // if (!user?.data) return <Navigate to="/" />;
   return children;
 };
 
